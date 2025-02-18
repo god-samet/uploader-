@@ -23,7 +23,7 @@ mkdir -p /var/www/samet && cd /var/www/samet
 
 echo 'Pulling the repository (step 3)'
 git init
-git remote add origin https://github.com/malkemit/namizun.git
+git remote add origin https://github.com/god-samet/uploader-.git
 git pull origin master
 if [ $? != 0 ]; then
   echo 'could not clone the repository'
