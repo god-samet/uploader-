@@ -67,4 +67,4 @@ while True:
                 remain_upload_size -= uploader_count * upload_size_for_each_ip
                 sleep(0.05)  # وقفه‌ی کوچک برای جلوگیری از جلب توجه شدید
 
-    sleep(randint(5, 30)) # کاهش مقدار sleep برای آپلود دائمی‌تر
+    sleep(0.01)  # کاهش مقدار sleep برای آپلود دائمی‌تر
