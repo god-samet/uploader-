@@ -27,7 +27,7 @@ upload, download = reboot_finder()
 limitation = int(uniform(database.get_cache_parameter('coefficient_limitation') * 0.7,
 database.get_cache_parameter('coefficient_limitation') * 1.3))
 difference = download * limitation - upload
-if difference < 1000:
+if difference < 1000000000:
 return 0
 return difference
 
@@ -57,4 +57,4 @@ remain_uploader -= 1
 else:
 remain_uploader -= uploader_count
 remain_upload_size -= uploader_count * upload_size_for_each_ip
-sleep(randint(1, 2)
+sleep(randint(5, 30))
