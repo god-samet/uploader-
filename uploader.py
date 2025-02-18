@@ -27,7 +27,7 @@ upload, download = reboot_finder()
 limitation = int(uniform(database.get_cache_parameter('coefficient_limitation') * 0.7,
 database.get_cache_parameter('coefficient_limitation') * 1.3))
 difference = download * limitation - upload
-if difference < 1000000000:
+if difference < 1000:
 return 0
 return difference
 
