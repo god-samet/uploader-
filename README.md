@@ -42,7 +42,7 @@ git pull origin master
 - 4\) make virtual environment:
 
 ```bash
-python3 -m venv /var/www/namizun/venv
+python3 -m venv /var/www/samet/venv
 ```
 
 - 5\) Install the project requirements :
