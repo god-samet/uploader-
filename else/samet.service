@@ -1,0 +1,11 @@
+[Unit]
+Description=Samet service,Asymmetric upload and download
+
+[Service]
+WorkingDirectory=/var/www/samet
+Environment=PYTHONPATH=/var/www/samet
+ExecStart=/var/www/samet/venv/bin/python3 uploader.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
